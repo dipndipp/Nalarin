@@ -2,7 +2,7 @@ import FooterImage from "../assets/images/footer.png";
 
 export default function Footer() {
   return (
-    <footer className="relative w-full mt-72">
+    <footer className="relative w-full  mt-20">
       {/* Background Glow Image */}
       <div className="absolute bottom-0 left-0 w-full flex justify-center pointer-events-none z-0">
         <img
