@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import Navbar from "../../components/navbar";
 import Footer from "../../components/footer";
-import LoginPic from "../../assets/images/loginPic.png";
+// import LoginPic from "../../assets/images/loginPic.png";
 
 
 export default function LoginPage() {
@@ -32,10 +32,10 @@ export default function LoginPage() {
                     <div>
                         
                     </div>
-                <div className="w-full mt-8">
-                    <button className="w-full bg-gradient-to-r from-[#3A4CEC] to-[#A44CEE] hover:opacity-90 transition-opacity text-white font-bold py-3 rounded-xl cursor-pointer">
+                <div className="w-full mt-8 flex justify-center">
+                    <Link to="/onboarding"  className="bg-gradient-to-r from-[#002DFF] to-[#050063] hover:opacity-90 transition-opacity text-white font-bold py-3 px-12 rounded-2xl font-jakarta-sans text-2xl cursor-pointer  w-full flex items-center justify-center">
                         Log In
-                    </button>
+                    </Link>
                 </div>
 
                 <div className="mt-6 text-sm text-gray-400">
