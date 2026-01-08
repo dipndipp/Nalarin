@@ -7,6 +7,30 @@
   --animate-fade-in-up: fade-in-up 0.8s ease-out forwards;
   --animate-pulse-slow: pulse-slow 4s ease-in-out infinite;
   --animate-gradient: gradient 3s ease infinite;
+  --animate-scale-in: scale-in 0.3s ease-out forwards;
+  --animate-shimmer: shimmer 2s ease-in-out infinite;
+
+  @keyframes shimmer {
+    0% {
+      transform: translateX(-100%);
+    }
+
+    100% {
+      transform: translateX(100%);
+    }
+  }
+
+  @keyframes scale-in {
+    0% {
+      opacity: 0;
+      transform: scale(0);
+    }
+
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
 
   @keyframes fade-in-down {
     0% {
@@ -57,9 +81,12 @@
   }
 
   @keyframes gradient {
-    0%, 100% {
+
+    0%,
+    100% {
       background-position: 0% 50%;
     }
+
     50% {
       background-position: 100% 50%;
     }
